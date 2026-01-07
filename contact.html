@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Get in touch with MyBrand. We'd love to hear about your project and how we can help.">
+    <title>Contact Us - MyBrand | Let's Connect</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div id="nav-placeholder"></div>
+
+    <!-- Hero Section -->
+    <section class="hero" style="min-height: 50vh;">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="dot"></span>
+                <span>Get In Touch</span>
+            </div>
+            <h1>Let's Build Something <span class="gradient-text">Amazing Together</span></h1>
+            <p>Have a project in mind? We'd love to hear from you. Send us a message and we'll get back to you as soon
+                as possible.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="section-header">
+            <span class="section-badge">Contact</span>
+            <h2 class="section-title">Send Us a Message</h2>
+        </div>
+
+        <div class="contact-form reveal">
+            <form action="#" method="post" id="contact-form">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Smith" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="How can we help?" required>
+                </div>
+                <div class="form-group">
+                    <label for="budget">Project Budget</label>
+                    <select id="budget" name="budget"
+                        style="width: 100%; padding: 16px 20px; background: rgba(255, 255, 255, 0.05); border: 1px solid var(--glass-border); border-radius: var(--radius-md); font-size: 1rem; color: var(--text-primary); font-family: var(--font-primary); cursor: pointer;">
+                        <option value="" style="background: #1a1a2e;">Select a range</option>
+                        <option value="1k-5k" style="background: #1a1a2e;">$1,000 - $5,000</option>
+                        <option value="5k-10k" style="background: #1a1a2e;">$5,000 - $10,000</option>
+                        <option value="10k-25k" style="background: #1a1a2e;">$10,000 - $25,000</option>
+                        <option value="25k+" style="background: #1a1a2e;">$25,000+</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message"
+                        placeholder="Tell us about your project, goals, and timeline..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary form-submit">
+                    Send Message
+                    <svg class="btn-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                </button>
+            </form>
+        </div>
+
+        <!-- Contact Info Cards -->
+        <div class="contact-info">
+            <div class="contact-card reveal">
+                <div class="contact-card-icon">📧</div>
+                <div class="contact-card-content">
+                    <h4>Email Us</h4>
+                    <p>hello@mybrand.com</p>
+                </div>
+            </div>
+            <div class="contact-card reveal">
+                <div class="contact-card-icon">📞</div>
+                <div class="contact-card-content">
+                    <h4>Call Us</h4>
+                    <p>+1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="contact-card reveal">
+                <div class="contact-card-icon">📍</div>
+                <div class="contact-card-content">
+                    <h4>Visit Us</h4>
+                    <p>123 Innovation Ave, Tech City</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section (Placeholder) -->
+    <section style="padding: 0;">
+        <div
+            style="width: 100%; height: 400px; background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(118, 75, 162, 0.1)); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+            <div
+                style="position: absolute; inset: 0; background: url('https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=1200&h=400&fit=crop') center/cover; opacity: 0.3;">
+            </div>
+            <div style="text-align: center; z-index: 1;" class="reveal">
+                <div style="font-size: 4rem; margin-bottom: 1rem;">🌍</div>
+                <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">We Work Globally</h3>
+                <p style="color: var(--text-secondary);">Serving clients across 15+ countries worldwide</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="features">
+        <div class="section-header">
+            <span class="section-badge">FAQ</span>
+            <h2 class="section-title">Frequently Asked Questions</h2>
+        </div>
+        <div style="max-width: 800px; margin: 0 auto;">
+            <div class="feature reveal" style="margin-bottom: 1rem;">
+                <h3>💬 How long does a typical project take?</h3>
+                <p>Project timelines vary based on complexity. A simple website takes 2-4 weeks, while complex
+                    applications can take 2-6 months. We'll provide a detailed timeline during our initial consultation.
+                </p>
+            </div>
+            <div class="feature reveal" style="margin-bottom: 1rem;">
+                <h3>💬 What is your development process?</h3>
+                <p>We follow an agile methodology with regular check-ins, demos, and feedback loops. You'll be involved
+                    throughout the process to ensure the final product meets your expectations.</p>
+            </div>
+            <div class="feature reveal" style="margin-bottom: 1rem;">
+                <h3>💬 Do you offer ongoing support?</h3>
+                <p>Yes! We offer various support packages including maintenance, updates, and 24/7 emergency support.
+                    All projects include an initial support period.</p>
+            </div>
+            <div class="feature reveal">
+                <h3>💬 How do I get started?</h3>
+                <p>Simply fill out the contact form above or email us directly. We'll schedule a free consultation call
+                    to discuss your project needs and provide a detailed proposal.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <div class="footer-brand">✦ MyBrand</div>
+                <p class="footer-description">Transforming businesses through innovative digital solutions since 2024.
+                </p>
+                <div class="social-links">
+                    <a href="#" class="social-link">📘</a>
+                    <a href="#" class="social-link">🐦</a>
+                    <a href="#" class="social-link">📸</a>
+                    <a href="#" class="social-link">💼</a>
+                </div>
+            </div>
+            <div>
+                <h4 class="footer-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="landing.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-title">Services</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">Mobile Apps</a></li>
+                    <li><a href="#">UI/UX Design</a></li>
+                    <li><a href="#">Consulting</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-title">Contact</h4>
+                <ul class="footer-links">
+                    <li>📧 info@mybrand.com</li>
+                    <li>📞 +1 (555) 123-4567</li>
+                    <li>📍 123 Innovation Ave</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 MyBrand. All rights reserved. Made with ❤️</p>
+        </div>
+    </footer>
+</body>
+
+</html>

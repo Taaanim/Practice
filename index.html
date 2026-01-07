@@ -1,29 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>My Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Welcome to MyBrand - Where innovation meets excellence. Discover our premium services and solutions.">
+    <title>Home - MyBrand | Innovation & Excellence</title>
+    <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
-<body>
 
+<body>
     <div id="nav-placeholder"></div>
 
-    <main style="padding: 20px;">
-        <h1>Welcome to the Page</h1>
-        <p>The menu is being loaded via JavaScript from a separate file.</p>
-        <p>The menu is being loaded via JavaScript from a separate file.</p>
-        <p>The menu is being loaded via JavaScript from a separate file.</p>
-        <p>The menu is being loaded via JavaScript from a separate file.</p>
-        <p>The menu is being loaded via JavaScript from a separate file.</p>
-        <p>The menu is being loaded via JavaScript from a separate file.</p>
-        <p>The menu is being loaded via JavaScript from a separate file.</p>
-        <p>The menu is being loaded via JavaScript from a separate file.</p>
-        <p>The menu is being loaded via JavaScript from a separate file.</p>
-        <p>The menu is being loaded via JavaScript from a separate file.</p>
-        <p>The menu is being loaded via JavaScript from a separate file.</p>
-        <p>The menu is being loaded via JavaScript from a separate file.</p>
-    </main>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="dot"></span>
+                <span>Now Available Worldwide</span>
+            </div>
+            <h1>Transform Your <span class="gradient-text">Digital Experience</span></h1>
+            <p>Unlock the potential of cutting-edge technology with our innovative solutions. We help businesses thrive
+                in the digital age with premium services tailored to your needs.</p>
+            <div class="hero-buttons">
+                <a href="landing.html" class="btn btn-primary">
+                    Get Started
+                    <svg class="btn-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                    </svg>
+                </a>
+                <a href="about.html" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
 
+    <!-- Stats Section -->
+    <section class="features">
+        <div class="stats">
+            <div class="stat-item reveal">
+                <div class="stat-number" data-target="500">500</div>
+                <div class="stat-label">Happy Clients</div>
+            </div>
+            <div class="stat-item reveal">
+                <div class="stat-number" data-target="150">150</div>
+                <div class="stat-label">Projects Done</div>
+            </div>
+            <div class="stat-item reveal">
+                <div class="stat-number" data-target="50">50</div>
+                <div class="stat-label">Team Members</div>
+            </div>
+            <div class="stat-item reveal">
+                <div class="stat-number" data-target="99" data-suffix="%">99%</div>
+                <div class="stat-label">Satisfaction</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Preview Section -->
+    <section>
+        <div class="content">
+            <div class="text reveal-left">
+                <span class="section-badge">About Us</span>
+                <h2>We Build Digital Products That Make Impact</h2>
+                <p>We are dedicated to providing high-quality services and innovative solutions. Our team works
+                    tirelessly to bring you the best experience possible, combining expertise with passion.</p>
+                <p>From startups to enterprises, we've helped hundreds of businesses transform their digital presence
+                    and achieve remarkable growth.</p>
+                <a href="about.html" class="btn btn-primary" style="margin-top: 1rem;">Our Story</a>
+            </div>
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop"
+                alt="Our Team Working" class="reveal-right">
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="section-header">
+            <span class="section-badge">Why Choose Us</span>
+            <h2 class="section-title">Features That Set Us Apart</h2>
+            <p class="section-subtitle">We combine innovation, reliability, and exceptional service to deliver
+                outstanding results for every project.</p>
+        </div>
+        <div class="feature-grid stagger-children">
+            <div class="feature reveal">
+                <div class="feature-icon">🚀</div>
+                <h3>Lightning Fast</h3>
+                <p>Experience blazing-fast performance with our optimized solutions that keep you ahead of the
+                    competition.</p>
+            </div>
+            <div class="feature reveal">
+                <div class="feature-icon">🎨</div>
+                <h3>Beautiful Design</h3>
+                <p>Stunning, modern designs that captivate your audience and leave lasting impressions.</p>
+            </div>
+            <div class="feature reveal">
+                <div class="feature-icon">🔒</div>
+                <h3>Secure & Reliable</h3>
+                <p>Enterprise-grade security measures to protect your data and ensure peace of mind.</p>
+            </div>
+            <div class="feature reveal">
+                <div class="feature-icon">💡</div>
+                <h3>Innovative Solutions</h3>
+                <p>Cutting-edge technology and creative approaches to solve complex business challenges.</p>
+            </div>
+            <div class="feature reveal">
+                <div class="feature-icon">🤝</div>
+                <h3>24/7 Support</h3>
+                <p>Round-the-clock expert support to help you whenever you need assistance.</p>
+            </div>
+            <div class="feature reveal">
+                <div class="feature-icon">📈</div>
+                <h3>Scalable Growth</h3>
+                <p>Solutions that grow with your business, from startup to enterprise scale.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section>
+        <div class="section-header reveal">
+            <span class="section-badge">Get Started Today</span>
+            <h2 class="section-title">Ready to Transform Your Business?</h2>
+            <p class="section-subtitle">Join hundreds of satisfied clients who have already elevated their digital
+                presence with our premium solutions.</p>
+            <div style="margin-top: 2rem;">
+                <a href="contact.html" class="btn btn-primary">Contact Us Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <div class="footer-brand">✦ MyBrand</div>
+                <p class="footer-description">Transforming businesses through innovative digital solutions since 2024.
+                </p>
+                <div class="social-links">
+                    <a href="#" class="social-link">📘</a>
+                    <a href="#" class="social-link">🐦</a>
+                    <a href="#" class="social-link">📸</a>
+                    <a href="#" class="social-link">💼</a>
+                </div>
+            </div>
+            <div>
+                <h4 class="footer-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="landing.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-title">Services</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">Mobile Apps</a></li>
+                    <li><a href="#">UI/UX Design</a></li>
+                    <li><a href="#">Consulting</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-title">Contact</h4>
+                <ul class="footer-links">
+                    <li>📧 info@mybrand.com</li>
+                    <li>📞 +1 (555) 123-4567</li>
+                    <li>📍 123 Innovation Ave</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 MyBrand. All rights reserved. Made with ❤️</p>
+        </div>
+    </footer>
 </body>
+
 </html>
