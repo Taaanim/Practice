@@ -4,8 +4,8 @@
 // ============================================
 
 document.addEventListener("DOMContentLoaded", function () {
-    // Load Navigation
-    loadNavigation();
+    // Initialize user interactions
+    initHamburgerMenu();
 
     // Initialize all animations and interactions
     initScrollReveal();
@@ -17,28 +17,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Add floating orbs to body
     createFloatingOrbs();
-});
 
-// ============================================
-// NAVIGATION LOADER
-// ============================================
-function loadNavigation() {
-    fetch('menue.html')
-        .then(response => {
-            if (!response.ok) {
-                throw new Error("HTTP error " + response.status);
-            }
-            return response.text();
-        })
-        .then(data => {
-            document.getElementById("nav-placeholder").innerHTML = data;
-            initHamburgerMenu();
-            highlightActiveNav();
-        })
-        .catch(error => {
-            console.error('Error loading the menu:', error);
-        });
-}
+    // Initialize form validation
+    initFormValidation();
+});
 
 // ============================================
 // HAMBURGER MENU
@@ -69,21 +51,6 @@ function initHamburgerMenu() {
             }
         });
     }
-}
-
-// ============================================
-// HIGHLIGHT ACTIVE NAV
-// ============================================
-function highlightActiveNav() {
-    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-    const navLinks = document.querySelectorAll('.nav-links a');
-
-    navLinks.forEach(link => {
-        const href = link.getAttribute('href');
-        if (href === currentPage) {
-            link.classList.add('active');
-        }
-    });
 }
 
 // ============================================
@@ -363,9 +330,6 @@ function initFormValidation() {
         });
     });
 }
-
-// Initialize form validation when DOM is ready
-document.addEventListener('DOMContentLoaded', initFormValidation);
 
 // ============================================
 // BUTTON RIPPLE EFFECT
